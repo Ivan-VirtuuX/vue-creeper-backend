@@ -75,7 +75,7 @@ export class UserRepository {
       .populate('favorites', '', this.productModel)
       .exec();
 
-    if (user.favorites.length !== 0) return user.favorites;
+    if (user && user.favorites.length !== 0) return user.favorites;
     return [];
   }
 
