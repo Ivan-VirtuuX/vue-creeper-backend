@@ -59,4 +59,8 @@ export class CreateOrderDto {
   @IsNumber()
   @IsNotEmpty()
   discount: number;
+
+  @IsString()
+  @IsNotEmpty()
+  deliveryMethod: string;
 }

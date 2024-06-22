@@ -51,6 +51,9 @@ export class Order {
   @Prop({ type: String, required: true })
   userId: string;
 
+  @Prop({ type: String, required: true })
+  deliveryMethod: string;
+
   @Prop({ type: Date, default: Date.now })
   createdAt: Date;
 }
